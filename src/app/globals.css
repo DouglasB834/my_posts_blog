@@ -6,22 +6,52 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --btn-color-1: rgb(67, 91, 119);
+
+  --bg-body : #656566 ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* feed  dos cards de embed */
+.sk-medium-publication-feed-container{
+background: linear-gradient(90deg, rgba(82,76,215,1) 24%, rgba(84,82,129,1) 61%, rgba(85,62,177,1) 81%);
+
+  width: 100% !important;
+  max-height: 800px;
+  overflow-y: scroll ;
+}
+
+/* container feed inteiro  */
+.sk-ww-medium-publication-feed{
+  display: flex !important;  
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.medium_publication_content{
+  cursor: pointer;
+}
+.sk_medium_publication_feed_grid-content{
+  height: 400px;
+  
+}
+
+.sk-post-image{
+  border-radius: 50% !important;
+  width: 80px !important;
+  height: 80px;
+  transform: translateX(60%);
+}
+
+.sk-description{
+  display: -webkit-box !important;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(5,31,73);
+  background: linear-gradient(90deg, rgba(5,31,73,1) 24%, rgba(84,82,129,1) 59%, rgb(96, 90, 116) 78%);
 }
